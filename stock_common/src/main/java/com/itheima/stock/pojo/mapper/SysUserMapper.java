@@ -1,6 +1,7 @@
 package com.itheima.stock.pojo.mapper;
 
 import com.itheima.stock.pojo.entity.SysUser;
+import org.apache.ibatis.annotations.Param;
 
 /**
 * @author Administrator
@@ -22,4 +23,5 @@ public interface SysUserMapper {
 
     int updateByPrimaryKey(SysUser record);
 
+    SysUser getUserInfoByUsername(@Param("username") String username);
 }
