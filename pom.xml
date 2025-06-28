@@ -16,6 +16,9 @@
         3.统一管理插件的版本依赖
         4.统一导入公共的依赖资源等
     </description>
+    <modules>
+        <module>stock_common</module>
+    </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
