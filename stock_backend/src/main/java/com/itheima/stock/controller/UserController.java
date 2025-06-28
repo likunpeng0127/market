@@ -15,6 +15,11 @@ public class UserController {
 
     private final UserService sysUserService;
 
+    /**
+     * 根据用户名称查询用户信息
+     * @param username
+     * @return
+     */
     @GetMapping("/stock/v1/getUserInfo")
     public SysUser getUserInfo(@RequestParam String username) {
         return sysUserService.getSysUserInfoByUsername(username);
