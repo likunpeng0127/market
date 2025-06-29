@@ -36,4 +36,6 @@ public class LoginRespVo {
      */
     private String nickName;
 
+    private String token;
+
 }

@@ -42,6 +42,7 @@
         <google.guava.version>30.0-jre</google.guava.version>
         <knif4j.version>2.0.2</knif4j.version>
         <hutool.version>5.7.21</hutool.version>
+        <mybatis-plus-boot-starter.version>3.5.12</mybatis-plus-boot-starter.version>
     </properties>
     <!--依赖资源的版本锁定-->
     <dependencyManagement>
@@ -60,6 +61,12 @@
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>${mybatis-spring-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-boot-starter.version}</version>
             </dependency>
             <!--pageHelper场景依赖-->
             <dependency>

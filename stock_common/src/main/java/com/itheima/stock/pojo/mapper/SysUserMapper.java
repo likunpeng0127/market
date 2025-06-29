@@ -1,5 +1,6 @@
 package com.itheima.stock.pojo.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.itheima.stock.pojo.entity.SysUser;
 import org.apache.ibatis.annotations.Param;
 
@@ -9,7 +10,7 @@ import org.apache.ibatis.annotations.Param;
 * @createDate 2025-06-28 11:15:47
 * @Entity com.itheima.stock.pojo.entity.SysUser
 */
-public interface SysUserMapper {
+public interface SysUserMapper extends BaseMapper<SysUser> {
 
     int deleteByPrimaryKey(Long id);
 
